@@ -4,7 +4,7 @@ export const Main = styled.main`
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    height: 43vh;
+    height: 46vh;
 `
 export const Header = styled.header`
     width: 100%;
@@ -58,8 +58,8 @@ export const DropDownList= styled.ul`
    display: block;
     color: #fff;
     position: relative;
-    top: 45px;
-    z-index: 3;
+    top: 100px;
+    z-index: 10;
     border-radius: 10px;
     padding: 10px;
     background-color: #330867;
@@ -85,7 +85,7 @@ export const DropDownList= styled.ul`
              top: 30px;
         }
         to { opacity: 1;
-            top: 45px;
+            top: 60px;
         }
     }
 `
@@ -108,25 +108,37 @@ export const DescriptionDiv = styled.div`
     height: 70vh;
     position: relative;
     left: 50px;
-    -webkit-animation: fadeIn .8s ease-in-out;
-    -moz-animation: fadeIn .8s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
     -o-animation: fadeIn .1s ease-in-out;
-    animation: fadeIn 1.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
     @-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; } 
+        from { opacity: 0;
+             transform: translateX(-100px);
+        }
+        to { opacity: 1;
+            transform: translateX(0px);
+        }
     }
     @-moz-keyframes fadeIn {
-        0% { opacity: 0;}
-        100% { opacity: 1; }
+        from { opacity: 0;
+             transform: translateX(-100px);
+        }
+        to { opacity: 1;
+            transform: translateX(0px);
+        }
     }
     @-o-keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
+        from { opacity: 0;
+             transform: translateX(-100px);
+        }
+        to { opacity: 1;
+            transform: translateX(0px);
+        }
     }
     @keyframes fadeIn {
         from { opacity: 0;
-             transform: translateX(-30px);
+             transform: translateX(-100px);
         }
         to { opacity: 1;
             transform: translateX(0px);
@@ -188,21 +200,33 @@ export const CarouselContainer = styled.section`
     justify-content: center;
     align-items: center;
     color: #fff;
-    -webkit-animation: workPage .5s ease-in-out;
-    -moz-animation: workPage .5s ease-in-out;
-    -o-animation: workPage .5s ease-in-out;
-    animation: workPage .5s ease-in-out;
+    -webkit-animation: workPage 1s ease-in-out;
+    -moz-animation: workPage 1s ease-in-out;
+    -o-animation: workPage 1s ease-in-out;
+    animation: workPage 1s ease-in-out;
     @-webkit-keyframes workPage {
-    0% { opacity: 0; }
-    100% { opacity: 1; } 
+        from { opacity: 0;
+             transform: translateX(-200px);
+        }
+        to { opacity: 1;
+            transform: translateX(0px);
+        }
     }
     @-moz-keyframes workPage {
-        0% { opacity: 0;}
-        100% { opacity: 1; }
+        from { opacity: 0;
+             transform: translateX(-200px);
+        }
+        to { opacity: 1;
+            transform: translateX(0px);
+        }
     }
     @-o-keyframes workPage {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
+        from { opacity: 0;
+             transform: translateX(-200px);
+        }
+        to { opacity: 1;
+            transform: translateX(0px);
+        }
     }
     @keyframes workPage {
         from { opacity: 0;
@@ -216,4 +240,76 @@ export const CarouselContainer = styled.section`
         width: 50%;
     }
 
+`
+export const SectionContainer = styled.section`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 46vh;
+    margin: 0 auto;
+    color: #fff;
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn .1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+    @-webkit-keyframes fadeIn {
+        from { opacity: 0;
+             transform: translateX(-100px);
+        }
+        to { opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @-moz-keyframes fadeIn {
+        from { opacity: 0;
+             transform: translateX(-100px);
+        }
+        to { opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @-o-keyframes fadeIn {
+        from { opacity: 0;
+             transform: translateX(-100px);
+        }
+        to { opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes fadeIn {
+        from { opacity: 0;
+             transform: translateX(-100px);
+        }
+        to { opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+    }
+`
+export const ContainerTitle = styled.h2`
+    font-size: 2em;
+`
+export const ContainerText = styled.p`
+    font-size: 1.2em;
+    margin: 20px 0;
+    width: 70%;
+    text-align: justify;
+`
+export const ContainerTextContacts = styled.p`
+    font-size: 1.2em;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+`
+export const AboutMeDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 60px;
 `
