@@ -8,3 +8,10 @@
 .SocialMediaIcons:hover{
     padding: 0px;
 }
+
+@media (max-width: 480px){
+    .SocialMediaIcons{
+        width: 11vw;
+        height: 10vh;
+    }
+}

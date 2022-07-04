@@ -5,6 +5,11 @@ export const Main = styled.main`
     justify-content: space-evenly;
     width: 100%;
     height: 46vh;
+    @media (max-width: 480px){
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 11px;
+    }
 `
 export const Header = styled.header`
     width: 100%;
@@ -13,12 +18,20 @@ export const Header = styled.header`
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+    @media (max-width: 480px){
+        justify-content: space-evenly;
+        border-bottom: 3px solid #330867;
+    }
 
 `
 export const Footer = styled.footer`
     width: 100%;
     position: relative;
     top: 40px;
+    @media (max-width: 480px){
+        top: 0px;
+        
+    }
 `
 export const Menu = styled.nav`
     display: flex;
@@ -49,6 +62,53 @@ export const MenuButton = styled.button`
     color: #fff;
     font-size: 1.2em;
     padding: 5px 15px;
+`
+export const MenuMobileButton = styled.button`
+    width: 5vw;
+    position: relative;
+    right: 18%;
+    background: none;
+    border: none;
+    padding: 15px;
+    svg{
+        width: 8vw;
+        height: 10vh;
+        color: rgba(255,255, 255, .8)
+    }
+`
+export const MenuMobileList = styled.ul`
+    display: block;
+    color: #fff;
+    position: relative;
+    top: 0px;
+    z-index: 11;
+    padding: 20px;
+    background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+    -webkit-animation: fadeIn .7s ease-in-out;
+    -moz-animation: fadeIn .7s ease-in-out;
+    -o-animation: fadeIn .7s ease-in-out;
+    animation: menufadeIn .7s ease-in-out;
+    @-webkit-keyframes menufadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes menufadeIn {
+        0% { opacity: 0;}
+        100% { opacity: 1; }
+    }
+    @-o-keyframes menufadeIn {
+        0% { opacity: 0;
+            transform: translateY(-30px); }
+        100% { opacity: 1; }
+    }
+    @keyframes menufadeIn {
+        from { opacity: 0;
+             
+        }
+        to { opacity: 1;
+            
+        }
+    }
 `
 export const MenuDropDown = styled.div`
     width: 13vw;
@@ -93,11 +153,21 @@ export const DropDownItem = styled.li`
     font-size: 1em;
     padding: 5px;
     list-style: none ;
+    @media (max-width: 480px){
+        a{
+            color: #fff;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+    }
 `
 export const SocialMedia = styled.div`
     display: flex;
     position: relative;
     left: 25%;
+    @media (max-width: 480px){
+        left: 19%;
+    }
 `
 export const DescriptionDiv = styled.div`
     display: flex;
@@ -144,16 +214,28 @@ export const DescriptionDiv = styled.div`
             transform: translateX(0px);
         }
     }
+    @media(max-width: 480px){
+        width: 80%;
+        height: 60vh;
+    }
 `
 export const TitleDescription = styled.h1`
     color: #fff;
     font-size: 50px;
     margin: 15px 0;
+    @media (max-width: 480px){
+        font-size: 2.1em;
+        
+    }
 `
 export const Description = styled.p`
     width: 70%;
     color: #fff;
     font-size: 20px;
+    @media (max-width: 480px){
+        width: 100%;
+        font-size: 1.4em;
+    }
 `
 export const SeeMoreButton = styled.button`
     width: 10vw;
@@ -178,10 +260,18 @@ export const SeeMoreButton = styled.button`
         text-decoration: none;
         padding: 5px;
     }
+    @media (max-width: 480px){
+        width: 35vw;
+        top: 20%;
+        
+    }
 `
 export const ProfilePicDiv = styled.div`
   width: 30%;
-  height: 50vh;
+  @media(max-width: 480px){
+    width: 100%;
+    height: 16vh;
+  }
 `
 export const ProfilePic= styled.img`
   width: 90% ;
@@ -189,6 +279,13 @@ export const ProfilePic= styled.img`
 position: relative;
 top: 57px;
 right: 20px;
+@media(max-width: 480px){
+    width: 50vw;
+    top: -100%;
+    left: 50%;
+    position: relative;
+    z-index: unset;
+  }
 `
 export const CarouselContainer = styled.section`
     width: 65%;
@@ -290,26 +387,56 @@ export const SectionContainer = styled.section`
         color: #fff;
         text-align: center;
     }
+    @media (max-width: 480px){
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 53%;
+    }
 `
 export const ContainerTitle = styled.h2`
     font-size: 2em;
+    @media (max-width: 480px){
+        ;
+    }
 `
 export const ContainerText = styled.p`
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin: 20px 0;
     width: 70%;
     text-align: justify;
+    @media (max-width: 480px){
+        width: 100%;
+        padding: 0 30px;
+         font-size: 16px;
+    }
 `
 export const ContainerTextContacts = styled.p`
     font-size: 1.2em;
     margin: 5px 0;
     width: 100%;
     text-align: center;
+    @media (max-width: 480px){
+        font-size: 1.5em;
+        position: relative;
+    }
+`
+export const ContactsDiv = styled.div`
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 60px;
+    @media (max-width: 480px){
+        top: 10px;
+    }
 `
 export const AboutMeDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 60px;
+    top: 70px;
+    @media (max-width: 480px){
+        top: 120px;
+    }
 `

@@ -5,7 +5,7 @@ export default function ContactsMeComponent(){
     return(
         <>
         <S.SectionContainer>
-            <S.AboutMeDiv>
+            <S.ContactsDiv>
                 <S.ContainerTitle> Contatos</S.ContainerTitle>
                 <S.ContainerTextContacts>
                     <a href="https://www.linkedin.com/in/brendonrodri/">LinkedIn</a>
@@ -20,7 +20,7 @@ export default function ContactsMeComponent(){
                     <a href="mailto:rbrendonm@gmail.com">E-mail: rbrendonm@gmail.com</a>
                 </S.ContainerTextContacts>
                 
-            </S.AboutMeDiv>
+            </S.ContactsDiv>
         </S.SectionContainer>
         {FooterComponent()}
         </>
