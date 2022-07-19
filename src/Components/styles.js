@@ -430,3 +430,22 @@ export const AboutMeDiv = styled.div`
         top: 120px;
     }
 `
+export const MobileWorksList = styled.ul`
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 80vw;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+`
+export const WorksMobileBox = styled.div`
+   margin: 20px auto;
+    position: relative;
+    right: 15px;
+`

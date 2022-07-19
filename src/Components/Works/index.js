@@ -87,37 +87,42 @@ export function WorksMobile(){
         {
             work: "ToDoFlix",
             desc: "Catálogo de filmes interativos",
-            img: Todoflix
+            img: Todoflix,
+            link: "https://ueefgv.csb.app/"
+        },
+        {
+            work: "Agenda Parada Angélica",
+            desc: "Agenda de objetivos sustentáveis",
+            img: Agenda,
+            link: "https://agendaparadaangelica2030.netlify.app/.netlify.app"
         },
         {
             work: "Task List",
             desc: "Um app para organizar suas tarefas",
-            img: Tasklist
+            img: Tasklist,
+            link: "https://0pg67b.csb.app/"
         },
-        {
-            work: "Agenda Parada Angélica 2030",
-            desc: "Agenda de objetivos sustentáveis para meu bairro",
-            img: Agenda
-        },
+        
         {
             work: "Recipes",
             desc: "Um belo catálogo de receitas",
-            img: Recipes
-        } 
+            img: Recipes,
+            link: "https://veggrecipes.netlify.app"
+        }
+       
     ])
     return(
         <>
-            <ul>
+            <S.MobileWorksList>
                 {works.map((item)=>(
-                    <>
-                        <li>{item.work}</li>
-                        <li>{item.desc}</li>
-                        <img src={item.img} style={{
-                            width: "90vw"
-                        }} />                    
-                    </>
+                    <S.WorksMobileBox>
+                        <h3><a href={item.link} target="_blank">{item.work}</a></h3>
+                        <p>{item.desc}</p>
+                        <a href={item.link} target="_blank"><img src={item.img}/></a>
+                                          
+                    </S.WorksMobileBox>
                 ))}
-            </ul>
+            </S.MobileWorksList>
         </>
     )
 }
