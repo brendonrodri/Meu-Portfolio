@@ -13,3 +13,8 @@ html{
     padding: 0px;
     box-sizing: border-box;
 }
+@media (max-width: 480px){
+    html{
+        overflow-y: visible;
+    }
+}

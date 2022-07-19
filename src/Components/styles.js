@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import BackgroundMain from "./Assets/background.jpg"
 export const Main = styled.main`
     display: flex;
     justify-content: space-evenly;
@@ -7,8 +6,8 @@ export const Main = styled.main`
     height: 46vh;
     @media (max-width: 480px){
         flex-direction: column;
-        height: 100%;
-        margin-bottom: 11px;
+        height: 70vh;
+        margin-bottom: 11px;     
     }
 `
 export const Header = styled.header`
@@ -22,15 +21,13 @@ export const Header = styled.header`
         justify-content: space-evenly;
         border-bottom: 3px solid #330867;
     }
-
 `
 export const Footer = styled.footer`
     width: 100%;
     position: relative;
     top: 40px;
     @media (max-width: 480px){
-        top: 0px;
-        
+        top: 40px;       
     }
 `
 export const Menu = styled.nav`
@@ -47,7 +44,6 @@ export const Menu = styled.nav`
         margin: 15px;
         font-size: 1.3em;
     }
-    
 `
 export const MenuItemList = styled.li`
     &:hover{
@@ -102,11 +98,9 @@ export const MenuMobileList = styled.ul`
         100% { opacity: 1; }
     }
     @keyframes menufadeIn {
-        from { opacity: 0;
-             
+        from { opacity: 0;          
         }
-        to { opacity: 1;
-            
+        to { opacity: 1;           
         }
     }
 `
@@ -224,8 +218,7 @@ export const TitleDescription = styled.h1`
     font-size: 50px;
     margin: 15px 0;
     @media (max-width: 480px){
-        font-size: 2.1em;
-        
+        font-size: 2.1em;     
     }
 `
 export const Description = styled.p`
@@ -262,8 +255,7 @@ export const SeeMoreButton = styled.button`
     }
     @media (max-width: 480px){
         width: 35vw;
-        top: 20%;
-        
+        top: 20%;       
     }
 `
 export const ProfilePicDiv = styled.div`
@@ -336,7 +328,6 @@ export const CarouselContainer = styled.section`
     img{
         width: 50%;
     }
-
 `
 export const SectionContainer = styled.section`
     display: flex;
@@ -395,8 +386,7 @@ export const SectionContainer = styled.section`
 `
 export const ContainerTitle = styled.h2`
     font-size: 2em;
-    @media (max-width: 480px){
-        ;
+    @media (max-width: 480px){ 
     }
 `
 export const ContainerText = styled.p`
