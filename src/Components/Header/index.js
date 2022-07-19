@@ -40,8 +40,8 @@ function HeaderDesktop (){
                 { menuswitch  && DropDownMenu() }
             </S.Menu>
             <S.SocialMedia>
-                <a href="https://github.com/brendonrodri" target="_blank"><FaGithubSquare className="SocialMediaIcons"/></a>
-                <a href="https://wa.me/5521983141408" target="_blank"><FaWhatsappSquare className="SocialMediaIcons" /></a>
+                <a href="https://github.com/brendonrodri" ><FaGithubSquare className="SocialMediaIcons"/></a>
+                <a href="https://wa.me/5521983141408" ><FaWhatsappSquare className="SocialMediaIcons" /></a>
             </S.SocialMedia>
         </S.Header>
     )
@@ -58,8 +58,8 @@ function HeaderMobile (){
                 <FaBars />
             </S.MenuMobileButton>
             <S.SocialMedia>
-                <a href="https://github.com/brendonrodri" target="_blank"><FaGithubSquare className="SocialMediaIcons"/></a>
-                <a href="https://wa.me/5521983141408" target="_blank"><FaWhatsappSquare className="SocialMediaIcons" /></a>
+                <a href="https://github.com/brendonrodri" ><FaGithubSquare className="SocialMediaIcons"/></a>
+                <a href="https://wa.me/5521983141408" ><FaWhatsappSquare className="SocialMediaIcons" /></a>
             </S.SocialMedia>
         </S.Header>
         { menuswitch  && (
