@@ -30,10 +30,11 @@ export function WorksDesktop(){
             <S.CarouselContainer>
                 <Carousel>
                     <Carousel.Item>
-                        <a href="https://ueefgv.csb.app/" target="_blank">
+                        <a href="https://ueefgv.csb.app/" >
                             <img
                             className="d-block w-100"
                             src={Todoflix}
+                            alt="Página de filmes"
                         />
                         </a>
                     <div>
@@ -42,10 +43,11 @@ export function WorksDesktop(){
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <a href="https://0pg67b.csb.app/" target="_blank">
+                        <a href="https://0pg67b.csb.app/" >
                             <img
                             className="d-block w-100"
                             src={Tasklist}
+                            alt="Página de lista de tarefas"
                         />
                         </a>
                         <div>
@@ -58,6 +60,7 @@ export function WorksDesktop(){
                             <img
                             className="d-block w-100"
                             src={Agenda}
+                            alt="Página de objetivos de desenvolvimento sustentável"
                             />
                         </a>
                         <div>
@@ -70,6 +73,7 @@ export function WorksDesktop(){
                             <img
                             className="d-block w-100"
                             src={Recipes}
+                            alt="Página de receitas"
                             />
                         </a>
                         <div>
@@ -116,9 +120,9 @@ export function WorksMobile(){
             <S.MobileWorksList>
                 {works.map((item)=>(
                     <S.WorksMobileBox>
-                        <h3><a href={item.link} target="_blank">{item.work}</a></h3>
+                        <h3><a href={item.link} >{item.work}</a></h3>
                         <p>{item.desc}</p>
-                        <a href={item.link} target="_blank"><img src={item.img}/></a>
+                        <a href={item.link} ><img src={item.img} alt="imagem"/></a>
                                           
                     </S.WorksMobileBox>
                 ))}

@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from "react"
-import { Routes, Route, BrowserRouter } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import HeaderComponent from "./Components/Header"
 import MainComponent from "./Components/Main"
 import WorksComponent from "./Components/Works"
