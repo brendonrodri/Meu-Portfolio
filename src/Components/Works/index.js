@@ -87,7 +87,7 @@ export function WorksDesktop(){
     );
 }
 export function WorksMobile(){
-    const works = useState([
+    const [works, setWorks] = useState([
         {
             work: "ToDoFlix",
             desc: "Catálogo de filmes interativos",
