@@ -115,9 +115,9 @@ export function WorksMobile(){
         }
        
     ])
-    useEffect(()=>{
+    const setworks = ()=>{
         setWorks()
-    },[])
+    }
     return(
         <>
             <S.MobileWorksList>
