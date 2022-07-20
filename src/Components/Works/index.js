@@ -115,6 +115,9 @@ export function WorksMobile(){
         }
        
     ])
+    useEffect(()=>{
+        setWorks()
+    })
     return(
         <>
             <S.MobileWorksList>
