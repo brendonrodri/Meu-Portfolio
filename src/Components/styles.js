@@ -6,7 +6,7 @@ export const Main = styled.main`
     height: 46vh;
     @media (max-width: 480px){
         flex-direction: column;
-        height: 70vh;
+        height: 80vh;
         margin-bottom: 11px;     
     }
 `
@@ -448,4 +448,17 @@ export const WorksMobileBox = styled.div`
    margin: 20px auto;
     position: relative;
     right: 15px;
+`
+export const DarkModeButtonDiv = styled.div`
+    position: absolute;
+    left: 2%;
+    top: 11%;
+    button{
+        border: none;
+        background: none;
+        
+    }
+    @media(width: 480px){
+        left: 10%;
+    }
 `
