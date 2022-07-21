@@ -1,8 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background: #150e2f;
-    text-shadow: 1px 2px 4px #330867;
-    
+    background: #150e2f;   
 }
 html{
     overflow-y: hidden;
