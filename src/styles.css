@@ -13,8 +13,30 @@ html{
     padding: 0px;
     box-sizing: border-box;
 }
+ .SunIcon{
+        width: 7vw;
+        height: 5vh;
+        color: rgba(255, 255, 0, 0.851);
+    }
+.MoonIcon{
+        width: 7vw;
+        height: 5vh;
+        color: #30b2c1;
+        margin: 5px;
+    }
 @media (max-width: 480px){
     html{
         overflow-y: visible;
+    }
+     .SunIcon{
+        width: 7vw;
+        height: 5vh;
+        color: rgba(255, 255, 0, 0.851);
+    }
+    .MoonIcon{
+        width: 7vw;
+        height: 5vh;
+        color: #30b2c1;
+        margin: 5px;
     }
 }
