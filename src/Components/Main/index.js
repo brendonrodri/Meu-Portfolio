@@ -1,11 +1,19 @@
-import React, {useEffect, useState} from "react"
+import React from "react"
+import {FaMoon, FaSun} from "react-icons/fa"
 import { Link } from "react-router-dom"
 import * as S from "../styles"
+import "../../styles.css"
 import ProfilePic from "../Assets/Profile.png"
 import FooterComponent from "../Footer"
 export default function MainComponent (){
     return(
         <>
+        <S.DarkModeButtonDiv>
+            <button onClick={()=>{
+                document.body.style.backgroundColor = "#30cfd0";
+        }}><FaSun className="SunIcon" /></button>
+            <button onClick={()=>{document.body.style.backgroundColor = "#150e2f"}}><FaMoon className="MoonIcon" /></button>
+        </S.DarkModeButtonDiv>
         <S.Main>
             <S.DescriptionDiv>
                 <S.TitleDescription>

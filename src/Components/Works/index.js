@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react"
+import React, {useEffect, useState, Component} from "react"
 import Todoflix from "../Assets/Todoflix.png"
 import Tasklist from "../Assets/tasklist.png"
 import Recipes from "../Assets/Recipes.png"
@@ -56,7 +56,7 @@ export function WorksDesktop(){
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <a href="https://agendaparadaangelica2030.netlify.app/.netlify.app">   
+                        <a href="https://agendaparadaangelica2030.netlify.app/">   
                             <img
                             className="d-block w-100"
                             src={Agenda}
@@ -86,8 +86,9 @@ export function WorksDesktop(){
         </>   
     );
 }
-export function WorksMobile(){
-    const works = useState([
+export class WorksMobile extends Component{
+   state ={
+    works: [
         {
             work: "ToDoFlix",
             desc: "Catálogo de filmes interativos",
@@ -114,19 +115,22 @@ export function WorksMobile(){
             link: "https://veggrecipes.netlify.app"
         }
        
-    ])
-    return(
-        <>
-            <S.MobileWorksList>
-                {works.map((item)=>(
-                    <S.WorksMobileBox>
-                        <h3><a href={item.link} >{item.work}</a></h3>
-                        <p>{item.desc}</p>
-                        <a href={item.link} ><img src={item.img} alt="imagem"/></a>
-                                          
-                    </S.WorksMobileBox>
-                ))}
-            </S.MobileWorksList>
-        </>
-    )
+    ]
+   }
+   render(){
+        return(
+            <>
+                <S.MobileWorksList>
+                    {this.state.works.map((item)=>(
+                        <S.WorksMobileBox>
+                            <h3><a href={item.link} >{item.work}</a></h3>
+                            <p>{item.desc}</p>
+                            <a href={item.link} ><img src={item.img} alt="imagem"/></a>
+                                            
+                        </S.WorksMobileBox>
+                    ))}
+                </S.MobileWorksList>
+            </>
+        )
+   }   
 }

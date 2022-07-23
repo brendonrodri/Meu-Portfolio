@@ -43,6 +43,7 @@ function HeaderDesktop (){
                 <a href="https://github.com/brendonrodri" ><FaGithubSquare className="SocialMediaIcons"/></a>
                 <a href="https://wa.me/5521983141408" ><FaWhatsappSquare className="SocialMediaIcons" /></a>
             </S.SocialMedia>
+            
         </S.Header>
     )
 }

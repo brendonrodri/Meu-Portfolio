@@ -6,7 +6,7 @@ export const Main = styled.main`
     height: 46vh;
     @media (max-width: 480px){
         flex-direction: column;
-        height: 70vh;
+        height: 80vh;
         margin-bottom: 11px;     
     }
 `
@@ -25,7 +25,7 @@ export const Header = styled.header`
 export const Footer = styled.footer`
     width: 100%;
     position: relative;
-    top: 40px;
+    top: 25px;
     @media (max-width: 480px){
         top: 40px;       
     }
@@ -238,6 +238,7 @@ export const SeeMoreButton = styled.button`
     margin-top: 15px;
     border: none;
     border-radius: 10px;
+    box-shadow: 1px 1px 1px #330867;
     position: relative;
     z-index: 2;
     top: 25px;
@@ -448,4 +449,17 @@ export const WorksMobileBox = styled.div`
    margin: 20px auto;
     position: relative;
     right: 15px;
+`
+export const DarkModeButtonDiv = styled.div`
+    position: absolute;
+    left: 2%;
+    top: 11%;
+    button{
+        border: none;
+        background: none;
+        
+    }
+    @media(width: 480px){
+        left: 10%;
+    }
 `
