@@ -454,7 +454,7 @@ export const WorksMobileBox = styled.div`
 `
 export const DarkModeButtonDiv = styled.div`
     position: absolute;
-    left: 2%;
+    left: 0%;
     top: 11%;
     button{
         border: none;
