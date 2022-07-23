@@ -99,7 +99,7 @@ export class WorksMobile extends Component{
             work: "Agenda Parada Angélica",
             desc: "Agenda de objetivos sustentáveis",
             img: Agenda,
-            link: "https://agendaparadaangelica2030.netlify.app/.netlify.app"
+            link: "https://agendaparadaangelica2030.netlify.app/"
         },
         {
             work: "Task List",

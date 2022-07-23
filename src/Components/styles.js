@@ -4,6 +4,7 @@ export const Main = styled.main`
     justify-content: space-evenly;
     width: 100%;
     height: 46vh;
+    text-shadow: 1px 2px 4px #330867;
     @media (max-width: 480px){
         flex-direction: column;
         height: 80vh;
@@ -337,6 +338,7 @@ export const SectionContainer = styled.section`
     width: 80%;
     height: 46vh;
     margin: 0 auto;
+    text-shadow: 1px 2px 4px #330867;
     color: #fff;
     -webkit-animation: fadeIn 1s ease-in-out;
     -moz-animation: fadeIn 1s ease-in-out;

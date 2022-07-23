@@ -1,6 +1,6 @@
 import React from "react"
-import {FaMoon, FaSun} from "react-icons/fa"
 import { Link } from "react-router-dom"
+import {FaMoon, FaSun} from "react-icons/fa"
 import * as S from "../styles"
 import "../../styles.css"
 import ProfilePic from "../Assets/Profile.png"

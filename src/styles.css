@@ -1,8 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background: #150e2f;
-    text-shadow: 1px 2px 4px #330867;
-    
+    background: #150e2f;   
 }
 html{
     overflow-y: hidden;
@@ -14,24 +12,21 @@ html{
     padding: 0px;
     box-sizing: border-box;
 }
+ .SunIcon{
+        width: 5vw;
+        height: 5vh;
+        color: rgba(255, 255, 0, 0.851);
+    }
+.MoonIcon{
+        width: 5vw;
+        height: 5vh;
+        color: #30b2c1;
+    }
 @media (max-width: 480px){
     html{
         overflow-y: visible;
     }
-}
-.SunIcon{
-    width: 2vw;
-    height: 5vh;
-    color: rgba(255, 255, 0, 0.851);
-}
-.MoonIcon{
-    width: 2vw;
-    height: 5vh;
-    color: #30b2c1;
-    margin: 5px;
-}
-@media (max-width: 480px){
-    .SunIcon{
+     .SunIcon{
         width: 7vw;
         height: 5vh;
         color: rgba(255, 255, 0, 0.851);
